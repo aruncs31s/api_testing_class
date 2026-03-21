@@ -19,5 +19,10 @@ def register_user():
     return json_data
 def test_register_user():
     response = register_user()
-    assert "user" in response
+    assert "user"  in response
     assert "token" in response
+
+def test_register_user_role():
+    response =register_user()
+    user = response["user"]
+    assert "role" in user
