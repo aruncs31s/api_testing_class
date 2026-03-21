@@ -2,11 +2,10 @@ from dataclasses import asdict, dataclass
 import json
 import requests
 
-
-
 from apis import SERVER_URL, LOGIN
 
 url = SERVER_URL + LOGIN
+
 
 def register_user():
     email = "ganga@gamil.com"
