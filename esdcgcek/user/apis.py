@@ -1,1 +1,1 @@
-USER = "api/users"
+USER = "/api/users"

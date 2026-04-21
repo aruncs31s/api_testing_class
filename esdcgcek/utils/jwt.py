@@ -11,8 +11,8 @@ def get_jwt(
 ) -> str:
     return requests.post(LOGIN_URL, json={"email": email, "password": password}).json()["token"]
 
-def main():
-    print(get_jwt("ganga@gamil.com", "gangav"))
-    
-def get_gangas_token():
+def main()-> str:
+    return get_jwt("ganga@gamil.com", "gangav")
+
+def get_gangas_token()-> str:
     return main()

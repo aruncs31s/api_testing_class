@@ -1,0 +1,34 @@
+[
+    {
+        "Hsc_Pgm_Id": 3,
+        "Board_Id": 1002,
+        "Stream": "Commerce ",
+        "Created_By": "9ff788de-2636-4285-b5c6-3734fed4b771",
+        "Active_Status": true,
+        "Created_Date": "/Date(1487502287273)/"
+    },
+    {
+        "Hsc_Pgm_Id": 85,
+        "Board_Id": 1002,
+        "Stream": "computer science ",
+        "Created_By": "c38914e6-da3a-4057-9327-1fcfe2f781a9",
+        "Active_Status": true,
+        "Created_Date": "/Date(1627969876297)/"
+    },
+    {
+        "Hsc_Pgm_Id": 2,
+        "Board_Id": 1002,
+        "Stream": "Humanities ",
+        "Created_By": "9ff788de-2636-4285-b5c6-3734fed4b771",
+        "Active_Status": true,
+        "Created_Date": "/Date(1487502287273)/"
+    },
+    {
+        "Hsc_Pgm_Id": 1,
+        "Board_Id": 1002,
+        "Stream": "Science ",
+        "Created_By": "9ff788de-2636-4285-b5c6-3734fed4b771",
+        "Active_Status": true,
+        "Created_Date": "/Date(1487502287273)/"
+    }
+]

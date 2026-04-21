@@ -1,17 +1,19 @@
 from esdcgcek.utils.jwt import get_gangas_token
-
+import pytest
 import requests
-# from esdcgcek.apis.base import SERVER_URL
-# from esdcgcek.user.apis import USER
+from esdcgcek.apis.base import SERVER_URL
+from esdcgcek.user.apis import USER
 
-SERVER_URL = "https://api.esdcgcek.in/api/users"
-def test_get_all_users():
-    token = get_gangas_token()
-    print(token)
-    # headers = {"Authorization": f"Bearer {token}"}
-    headers = {
-        'Authorization': f"Bearer {token}"
-        }
-    response = requests.get(SERVER_URL, headers=headers)
-    # assert response.status_code == 200
-    print(response.json())
+
+USER_URL = SERVER_URL + USER
+
+
+@pytest.fixture(scope="module")
+def get_header():
+    return {"Authorization": f"Bearer {get_gangas_token()}"}
+
+
+def test_get_all_users(get_header):
+    headers = get_header
+    response = requests.get(USER_URL, headers=headers)
+    
